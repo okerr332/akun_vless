@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 proxies:
-  - name: "dpo"
+  - name: "coooook"
     type: vless
     server: 104.17.3.81
     port: 80
