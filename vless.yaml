@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 proxies:
-  - name: "dewaa"
+  - name: "dew"
     type: vless
     server: 104.17.3.
     port: 80
