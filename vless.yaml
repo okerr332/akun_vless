@@ -6,7 +6,7 @@ log-level: info
 proxies:
   - name: "dewPO"
     type: vless
-    server: 104.17.3.81
+    server: COK.LKK
     port: 80
     uuid: bfcd2954-c539-4db6-957a-d4a6c3ca0c3e
     cipher: none
