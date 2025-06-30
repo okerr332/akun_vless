@@ -1,16 +1,26 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
 proxies:
-  - name: dewaa
+  - name: "dewaa"
+    type: vless
     server: 104.17.3.81
     port: 80
-    type: vless
     uuid: bfcd2954-c539-4db6-957a-d4a6c3ca0c3e
-    cipher: auto
+    cipher: none
     tls: false
-    skip-cert-verify: true
-    servername: dewa.akibead.biz.id
+    skip-cert-verify: false
     network: ws
     ws-opts:
       path: /vless
       headers:
         Host: dewa.akibead.biz.id
-    udp: true
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - dewaa
+rules:
+  - MATCH,Proxy
